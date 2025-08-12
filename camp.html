@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Riad El Baraka – Marrakech</title>
+  <meta name="description" content="Riad El Baraka is a warm, elegant riad in the heart of Marrakech. Book rooms, explore amenities, and get in touch." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config (extend brand colors)
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#f97316', // primary
+              black: '#0b0b0b',  // primary
+              desert: '#F3E7D3'  // third color
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.08)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root{ --pat: radial-gradient(12px 12px at 12px 12px, rgba(0,0,0,0.08) 1px, transparent 1.2px); }
+    html { scroll-behavior: smooth; }
+    /* Decorative Moroccan-style border */
+    .tile-top { position: relative; }
+    .tile-top:before {
+      content: ""; position: absolute; inset: 0 0 auto 0; height: 10px;
+      background-image: repeating-linear-gradient(45deg, #f97316 0 12px, #0b0b0b 12px 24px, #F3E7D3 24px 36px);
+      border-top-left-radius: 1rem; border-top-right-radius: 1rem;
+    }
+    .bg-pattern { background-image: var(--pat); background-size: 28px 28px; }
+    .glass {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom right, rgba(18,18,18,0.65), rgba(18,18,18,0.35));
+    }
+  </style>
+</head>
+<body class="font-sans text-brand-black bg-white">
+  <!-- NAVBAR -->
+  <header class="fixed top-0 inset-x-0 z-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mt-4 rounded-2xl shadow-soft glass text-white">
+        <nav class="flex items-center justify-between p-4">
+          <a href="#home" class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-orange text-black font-extrabold">RB</span>
+            <span class="text-lg sm:text-xl font-semibold tracking-wide">Riad El Baraka</span>
+          </a>
+          <button id="navToggle" class="lg:hidden inline-flex items-center justify-center rounded-xl border border-white/20 px-3 py-2">
+            <span class="sr-only">Open menu</span>
+            <!-- Menu icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
+          </button>
+          <ul id="navMenu" class="hidden lg:flex items-center gap-6">
+            <li><a class="hover:text-brand-orange" href="#rooms">Rooms</a></li>
+            <li><a class="hover:text-brand-orange" href="#amenities">Amenities</a></li>
+            <li><a class="hover:text-brand-orange" href="#gallery">Gallery</a></li>
+            <li><a class="hover:text-brand-orange" href="#location">Location</a></li>
+            <li><a class="hover:text-brand-orange" href="#contact">Contact</a></li>
+            <li><a class="ml-2 inline-flex items-center rounded-xl bg-brand-orange px-4 py-2 font-semibold text-black" href="#booking">Book Now</a></li>
+          </ul>
+        </nav>
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10">
+          <ul class="p-4 grid gap-2 text-white/90">
+            <li><a class="block rounded-lg px-3 py-2 hover:bg-white/10" href="#rooms">Rooms</a></li>
+            <li><a class="block rounded-lg px-3 py-2 hover:bg-white/10" href="#amenities">Amenities</a></li>
+            <li><a class="block rounded-lg px-3 py-2 hover:bg-white/10" href="#gallery">Gallery</a></li>
+            <li><a class="block rounded-lg px-3 py-2 hover:bg-white/10" href="#location">Location</a></li>
+            <li><a class="block rounded-lg px-3 py-2 hover:bg-white/10" href="#contact">Contact</a></li>
+            <li><a class="mt-2 block rounded-lg bg-brand-orange px-3 py-2 text-black font-semibold" href="#booking">Book Now</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative min-h-[88vh] grid place-items-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1603190287605-e6ade32fa852?q=80&w=1600&auto=format&fit=crop" alt="Marrakech riad courtyard" class="absolute inset-0 h-full w-full object-cover"/>
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <div class="relative z-10 mx-auto max-w-5xl px-6 text-center text-white">
+      <span class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-sm tracking-wide">Welcome to <strong class="font-semibold">Marrakech</strong></span>
+      <h1 class="mt-6 text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
+        Riad El Baraka
+      </h1>
+      <p class="mt-4 text-lg sm:text-xl text-white/90 max-w-2xl mx-auto">
+        A serene escape steps from the souks. Orange warmth, black elegance, and the soft hues of the desert.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="#booking" class="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-brand-orange px-6 py-3 font-semibold text-black shadow-soft">Book Your Stay</a>
+        <a href="#rooms" class="w-full sm:w-auto inline-flex items-center justify-center rounded-xl border border-white/20 px-6 py-3 font-semibold text-white hover:border-white/40">Explore Rooms</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="relative -mt-12 pb-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="tile-top rounded-2xl bg-white shadow-soft p-6 sm:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+          <div>
+            <label class="block text-sm font-medium text-brand-black/80">Check-in</label>
+            <input id="checkin" type="date" class="mt-1 w-full rounded-xl border border-black/10 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-orange" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-brand-black/80">Check-out</label>
+            <input id="checkout" type="date" class="mt-1 w-full rounded-xl border border-black/10 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-orange" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-brand-black/80">Guests</label>
+            <select id="guests" class="mt-1 w-full rounded-xl border border-black/10 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-orange">
+              <option>1 adult</option>
+              <option selected>2 adults</option>
+              <option>3 adults</option>
+              <option>4 adults</option>
+              <option>Family (2+2)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-brand-black/80">Promo code</label>
+            <input id="promo" type="text" placeholder="Optional" class="mt-1 w-full rounded-xl border border-black/10 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-orange" />
+          </div>
+          <div class="md:col-span-1">
+            <button id="bookBtn" class="w-full inline-flex items-center justify-center rounded-xl bg-brand-orange px-6 py-3 font-semibold text-black shadow-soft">Search</button>
+          </div>
+        </div>
+        <p id="bookingHelp" class="mt-3 text-sm text-brand-black/70"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS -->
+  <section id="rooms" class="py-16 bg-brand-desert/40 bg-pattern">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl sm:text-4xl font-bold">Rooms & Suites</h2>
+        <p class="mt-2 text-brand-black/70">Handcrafted details, calm courtyards, and crisp linens. Choose your perfect retreat.</p>
+      </div>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Room card 1 -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-soft border border-black/5">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1505692794403-34d4982f88aa?q=80&w=1600&auto=format&fit=crop" alt="Patio room" />
+          <div class="p-5">
+            <h3 class="text-xl font-semibold">Patio Room</h3>
+            <p class="mt-1 text-sm text-brand-black/70">Queen bed · Patio view · Rain shower</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="font-bold">€95 <span class="text-sm font-medium text-brand-black/60">/ night</span></span>
+              <a href="#booking" class="inline-flex items-center rounded-xl bg-brand-orange px-4 py-2 text-black font-semibold">Book</a>
+            </div>
+          </div>
+        </article>
+        <!-- Room card 2 -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-soft border border-black/5">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop" alt="Suite with balcony" />
+          <div class="p-5">
+            <h3 class="text-xl font-semibold">Atlas Suite</h3>
+            <p class="mt-1 text-sm text-brand-black/70">King bed · Balcony · Soaking tub</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="font-bold">€140 <span class="text-sm font-medium text-brand-black/60">/ night</span></span>
+              <a href="#booking" class="inline-flex items-center rounded-xl bg-brand-orange px-4 py-2 text-black font-semibold">Book</a>
+            </div>
+          </div>
+        </article>
+        <!-- Room card 3 -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-soft border border-black/5">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop" alt="Family room" />
+          <div class="p-5">
+            <h3 class="text-xl font-semibold">Family Room</h3>
+            <p class="mt-1 text-sm text-brand-black/70">1 King + 2 Twins · Courtyard access</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="font-bold">€125 <span class="text-sm font-medium text-brand-black/60">/ night</span></span>
+              <a href="#booking" class="inline-flex items-center rounded-xl bg-brand-orange px-4 py-2 text-black font-semibold">Book</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section id="amenities" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl sm:text-4xl font-bold">Amenities</h2>
+        <p class="mt-2 text-brand-black/70">Thoughtful touches to make your stay effortless.</p>
+      </div>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- amenity cards -->
+        <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-orange/10 text-brand-orange">
+              <!-- breakfast icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M7 6v8a5 5 0 1 0 10 0V6"/></svg>
+            </span>
+            <h3 class="font-semibold">Homemade Breakfast</h3>
+          </div>
+          <p class="mt-3 text-sm text-brand-black/70">Fresh msemen, local honey, and seasonal fruits served in the courtyard.</p>
+        </div>
+        <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-orange/10 text-brand-orange">
+              <!-- wifi icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.5 16.5a3.5 3.5 0 1 1 7 0m-10-4a8 8 0 0 1 13 0m-16-4a12 12 0 0 1 19 0"/></svg>
+            </span>
+            <h3 class="font-semibold">Fast Wi‑Fi</h3>
+          </div>
+          <p class="mt-3 text-sm text-brand-black/70">Stream, work, or video chat with reliable coverage throughout the riad.</p>
+        </div>
+        <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-orange/10 text-brand-orange">
+              <!-- pool icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 18c1.5-1 3-1 4.5 0s3 1 4.5 0 3-1 4.5 0 3 1 4.5 0M3 14c1.5-1 3-1 4.5 0s3 1 4.5 0 3-1 4.5 0 3 1 4.5 0"/></svg>
+            </span>
+            <h3 class="font-semibold">Plunge Pool</h3>
+          </div>
+          <p class="mt-3 text-sm text-brand-black/70">Cool off after a day in the medina under the orange trees.</p>
+        </div>
+        <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-orange/10 text-brand-orange">
+              <!-- transfer icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3 7 5-5 5 5M8 2v13m13 5-5 5-5-5m5 5V9"/></svg>
+            </span>
+            <h3 class="font-semibold">Airport Transfers</h3>
+          </div>
+          <p class="mt-3 text-sm text-brand-black/70">Hassle‑free pickup and drop‑off arranged on request.</p>
+        </div>
+        <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-orange/10 text-brand-orange">
+              <!-- terrace icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16M6 6h12M3 18h18M8 12v6m8-6v6"/></svg>
+            </span>
+            <h3 class="font-semibold">Rooftop Terrace</h3>
+          </div>
+          <p class="mt-3 text-sm text-brand-black/70">Sunset tea with city views and cozy seating areas.</p>
+        </div>
+        <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-orange/10 text-brand-orange">
+              <!-- concierge icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm-8 11a8 8 0 1 1 16 0H4Z"/></svg>
+            </span>
+            <h3 class="font-semibold">Local Concierge</h3>
+          </div>
+          <p class="mt-3 text-sm text-brand-black/70">Tours, hammams, and dining—personalized recommendations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl sm:text-4xl font-bold">Gallery</h2>
+        <p class="mt-2 text-brand-black/70">A glimpse of colors and calm.</p>
+      </div>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <img class="h-44 w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=1200&auto=format&fit=crop" alt="Courtyard" />
+        <img class="h-44 w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop" alt="Tile details" />
+        <img class="h-44 w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1522706604294-57ea1d88f888?q=80&w=1200&auto=format&fit=crop" alt="Rooftop" />
+        <img class="h-44 w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1512455102796-7f804a00e23b?q=80&w=1200&auto=format&fit=crop" alt="Tea" />
+        <img class="h-44 w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop" alt="Room" />
+        <img class="h-44 w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1527254059245-3a3bf2c3a171?q=80&w=1200&auto=format&fit=crop" alt="Lanterns" />
+        <img class="h-44 w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?q=80&w=1200&auto=format&fit=crop" alt="Market" />
+        <img class="h-44 w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop" alt="Desert" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location" class="py-16 bg-brand-desert/40">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-bold">In the Heart of Marrakech</h2>
+          <p class="mt-3 text-brand-black/70">Nestled near the medina, Riad El Baraka is a short stroll from Jemaa el‑Fnaa and the vibrant souks.</p>
+          <ul class="mt-6 grid gap-3">
+            <li class="flex items-center gap-3"><span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-orange/10 text-brand-orange">📍</span> Sidi Benslimane (example) – Marrakech</li>
+            <li class="flex items-center gap-3"><span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-orange/10 text-brand-orange">🚶</span> 10–15 minutes to Jemaa el‑Fnaa</li>
+            <li class="flex items-center gap-3"><span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-orange/10 text-brand-orange">🚕</span> 20 minutes from RAK Airport</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-soft border border-black/10">
+          <iframe title="Map" width="100%" height="360" style="border:0" loading="lazy" allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.795898795828!2d-7.991!3d31.631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee12f07a123%3A0x0!2sMarrakech!5e0!3m2!1sen!2sma!4v1680199999999"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-bold">Get in Touch</h2>
+          <p class="mt-2 text-brand-black/70">Questions, group bookings, or special requests—we're happy to help.</p>
+          <div class="mt-6 rounded-2xl bg-white p-6 shadow-soft border border-black/10">
+            <form id="contactForm" class="grid sm:grid-cols-2 gap-4">
+              <div class="sm:col-span-1">
+                <label class="block text-sm font-medium text-brand-black/80">Name</label>
+                <input type="text" required class="mt-1 w-full rounded-xl border border-black/10 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-orange"/>
+              </div>
+              <div class="sm:col-span-1">
+                <label class="block text-sm font-medium text-brand-black/80">Email</label>
+                <input type="email" required class="mt-1 w-full rounded-xl border border-black/10 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-orange"/>
+              </div>
+              <div class="sm:col-span-2">
+                <label class="block text-sm font-medium text-brand-black/80">Message</label>
+                <textarea rows="5" required class="mt-1 w-full rounded-xl border border-black/10 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-orange"></textarea>
+              </div>
+              <div class="sm:col-span-2">
+                <button class="w-full inline-flex items-center justify-center rounded-xl bg-brand-orange px-6 py-3 font-semibold text-black shadow-soft">Send</button>
+              </div>
+            </form>
+          </div>
+          <p id="contactHelp" class="mt-3 text-sm text-brand-black/70"></p>
+        </div>
+        <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+          <h3 class="text-xl font-semibold">Direct Contacts</h3>
+          <ul class="mt-4 space-y-3 text-brand-black/80">
+            <li>📞 +212 6 12 34 56 78</li>
+            <li>✉️ hello@riadelbaraka.com</li>
+            <li>📍 Medina, Marrakech, Morocco</li>
+          </ul>
+          <div class="mt-6 h-px w-full bg-gradient-to-r from-transparent via-black/20 to-transparent"></div>
+          <h3 class="mt-6 text-xl font-semibold">Follow</h3>
+          <div class="mt-3 flex items-center gap-3">
+            <a class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-black/10 hover:bg-black/5" href="#" aria-label="Instagram">📷</a>
+            <a class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-black/10 hover:bg-black/5" href="#" aria-label="Facebook">f</a>
+            <a class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-black/10 hover:bg-black/5" href="#" aria-label="X">𝕏</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-black/10 py-10 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-brand-black/70">© <span id="year"></span> Riad El Baraka. All rights reserved.</p>
+        <nav class="text-sm flex items-center gap-4">
+          <a href="#home" class="hover:text-brand-orange">Top</a>
+          <a href="#rooms" class="hover:text-brand-orange">Rooms</a>
+          <a href="#contact" class="hover:text-brand-orange">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const toggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    toggle?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Booking form helper
+    const ci = document.getElementById('checkin');
+    const co = document.getElementById('checkout');
+    const help = document.getElementById('bookingHelp');
+    const btn = document.getElementById('bookBtn');
+
+    // Set default dates (today + 1, +3)
+    const today = new Date();
+    const pad = (n) => String(n).padStart(2,'0');
+    const fmt = (d) => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+    const d1 = new Date(today); d1.setDate(d1.getDate()+1);
+    const d2 = new Date(today); d2.setDate(d2.getDate()+3);
+    ci.value = fmt(d1); co.value = fmt(d2);
+    ci.min = fmt(today); co.min = fmt(today);
+
+    function nights() {
+      const a = new Date(ci.value); const b = new Date(co.value);
+      return Math.max(0, Math.round((b - a) / (1000*60*60*24)));
+    }
+
+    function updateHelp() {
+      const n = nights();
+      if (!ci.value || !co.value) { help.textContent = ''; return; }
+      if (n <= 0) {
+        help.textContent = 'Please choose a check‑out date after check‑in.';
+        help.className = 'mt-3 text-sm text-red-600';
+      } else {
+        help.textContent = `Great! ${n} night${n>1?'s':''} selected.`;
+        help.className = 'mt-3 text-sm text-brand-black/70';
+      }
+    }
+
+    ci.addEventListener('change', updateHelp);
+    co.addEventListener('change', updateHelp);
+    updateHelp();
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const n = nights();
+      if (n <= 0) { updateHelp(); return; }
+      const guests = document.getElementById('guests').value;
+      const promo = document.getElementById('promo').value.trim();
+      // Example: redirect to an external booking engine with query params
+      const params = new URLSearchParams({ in: ci.value, out: co.value, guests, coupon: promo });
+      // Replace the URL below with your booking engine endpoint when ready
+      const url = `https://example.com/book?${params.toString()}`;
+      window.location.href = url;
+    });
+
+    // Contact form (demo)
+    const contactForm = document.getElementById('contactForm');
+    const contactHelp = document.getElementById('contactHelp');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      contactHelp.textContent = 'Thanks! We\'ll get back to you shortly.';
+    });
+  </script>
+</body>
+</html>

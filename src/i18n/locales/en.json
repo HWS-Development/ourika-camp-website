@@ -1,0 +1,95 @@
+{
+    "brand": "Ourika Camp",
+    "nav": { "home": "Home", "rooms": "Rooms", "reviews": "Reviews", "gallery": "Gallery", "location": "Location", "contact": "Contact", "book": "Book Now" },
+    "home": {
+      "welcome": "Welcome to {{city}}",
+      "city": "Marrakech",
+      "headline": "Ourika Camp",
+      "subtitle": "A serene escape steps from the souks. Orange warmth, black elegance, and the soft hues of the desert.",
+      "ctaBook": "Book Your Stay",
+      "ctaRooms": "Explore Rooms"
+    },
+    "roomsPage": {
+      "title": "Our Rooms",
+      "intro": "Discover our selection of rooms and suites, each designed to reflect the charm of Marrakech with modern comfort.",
+      "book": "Book",
+      "pricePerNight": "{{price}} / night",
+      "items": {
+        "double": {
+          "title": "Standard Double Room",
+          "desc": "This spacious double room features air conditioning, a private entrance, and a private bathroom with a shower and hairdryer. The room offers soundproof walls, a wardrobe, tiled floors, heating, and a flat-screen TV. Includes 1 bed."
+        },
+        "familySuite": {
+          "title": "Family Suite",
+          "desc": "In the well-equipped kitchen, guests will find a stove, refrigerator, kitchenware, and a tea/coffee kettle. The spacious family living room offers air conditioning, a private entrance, a garden-view terrace, and a private bathroom with a shower. The apartment has 3 beds."
+        },
+        "juniorSuite": {
+          "title": "Junior Suite with Mountain View",
+          "desc": "Featuring a private entrance, this air-conditioned suite includes a living room, a separate bedroom, and a bathroom with a shower. Offering a garden-view terrace, it also has soundproof walls and a flat-screen TV. Includes 1 bed."
+        },
+        "triplePool": {
+          "title": "Triple Room with Pool View",
+          "desc": "This spacious triple room offers air conditioning, a private entrance, a pool-view balcony, and a private bathroom with a shower. Includes 2 beds."
+        }
+      }
+    },
+    "roomsHome": {
+        "heading": "Rooms & Suites",
+        "sub": "Handcrafted details, calm courtyards, and crisp linens. Choose your perfect retreat.",
+        "viewMore": "View more"
+    },
+    "reviews": {
+        "heading": "Guest Reviews",
+        "sub": "Real impressions from our recent guests.",
+        "items": [
+            { "name": "yahya lassfar", "text": "It is a very wonderful place.❤️ I liked the place well and the food was amazing🥰." },
+            { "name": "Sylvia", "text": "Great place to stay, dip in the pool, do the laundry and relax!! Also suitable for big camper trucks." },
+            { "name": "Freddy Bryson-Bassett", "text": "Great site with good facilities, will visit again." }
+        ]
+    },
+    "booking": {
+      "labels": { "checkin": "Check-in", "checkout": "Check-out", "guests": "Guests", "promo": "Promo code", "search": "Search" },
+      "nights_one": "Great! {{count}} night selected.",
+      "nights_other": "Great! {{count}} nights selected.",
+      "invalid": "Please choose a check-out date after check-in.",
+      "guestsOptions": ["1 adult", "2 adults", "3 adults", "4 adults", "Family (2+2)"]
+    },
+    "gallery": {
+      "heading": "Gallery",
+      "sub": "A glimpse of colors and calm."
+    },
+    "location": {
+      "heading": "In the Heart of Marrakech",
+      "desc": "Nestled near the medina, Riad El Baraka is a short stroll from Jemaa el-Fnaa and the vibrant souks.",
+      "bullets": {
+        "address": "Sidi Benslimane (example) – Marrakech",
+        "walk": "10–15 minutes to Jemaa el-Fnaa",
+        "airport": "20 minutes from RAK Airport"
+      }
+    },
+    "contact": {
+      "heading": "Get in Touch",
+      "sub": "Questions, group bookings, or special requests—we're happy to help.",
+      "form": { "name": "Name", "email": "Email", "message": "Message", "send": "Send", "thanks": "Thanks! We'll get back to you shortly." },
+      "direct": { "heading": "Direct Contacts", "phone": "📞 +212 6 12 34 56 78", "email": "✉️ hello@riadelbaraka.com", "address": "📍 Medina, Marrakech, Morocco" },
+      "follow": "Follow"
+    },
+    "footer": {
+      "rights": "All rights reserved.",
+      "top": "Top",
+      "rooms": "Rooms",
+      "contact": "Contact"
+    },
+    "galleryPage": {
+      "heading": "Gallery",
+      "sub": "Browse photos from the riad and surroundings.",
+      "close": "Close",
+      "next": "Next",
+      "prev": "Previous",
+      "counter": "{{current}} / {{total}}",
+      "alt": "Gallery image {{n}}"
+    }
+
+
+  }
+  

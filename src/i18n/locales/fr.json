@@ -1,0 +1,96 @@
+{
+    "brand": "Ourika Camp",
+    "nav": { "home": "Accueil", "rooms": "Chambres", "reviews": "Avis", "gallery": "Galerie", "location": "Emplacement", "contact": "Contact", "book": "Réserver" },
+    "home": {
+      "welcome": "Bienvenue à {{city}}",
+      "city": "Marrakech",
+      "headline": "Ourika Camp",
+      "subtitle": "Un havre de paix à deux pas des souks. Chaleur orangée, élégance noire et teintes du désert.",
+      "ctaBook": "Réserver votre séjour",
+      "ctaRooms": "Découvrir les chambres"
+    },
+    "roomsPage": {
+      "title": "Nos Chambres",
+      "intro": "Découvrez notre sélection de chambres et suites alliant charme de Marrakech et confort moderne.",
+      "book": "Réserver",
+      "pricePerNight": "{{price}} / nuit",
+      "items": {
+        "double": {
+          "title": "Chambre Double Standard",
+          "desc": "La spacieuse chambre double dispose de la climatisation, d'une entrée privée, ainsi que d'une salle de bain privative avec une douche et un sèche-cheveux. La chambre double offre des murs insonorisés, une armoire, un sol en carrelage, le chauffage et une télévision à écran plat. L'unité comprend 1 lit."
+        },
+        "familySuite": {
+          "title": "Suite Familiale",
+          "desc": "Dans la cuisine bien équipée, les invités trouveront une cuisinière, un réfrigérateur, des ustensiles de cuisine et une bouilloire à thé et café. Le spacieux salon familial offre la climatisation, une entrée privée, une terrasse avec vue sur le jardin ainsi qu'une salle de bains privative avec douche. L'appartement dispose de 3 lits."
+        },
+        "juniorSuite": {
+          "title": "Suite Junior Vue sur Montagne",
+          "desc": "Dotée d'une entrée privée, cette suite climatisée se compose d'un salon, d'une chambre séparée et d'une salle de bains avec douche. Offrant une terrasse avec vue sur le jardin, cette suite dispose également de murs insonorisés et d'une télévision à écran plat. L'unité propose 1 lit."
+        },
+        "triplePool": {
+          "title": "Chambre Triple Vue sur la Piscine",
+          "desc": "La spacieuse chambre triple offre la climatisation, une entrée privée, un balcon avec vue sur la piscine ainsi qu'une salle de bain privée avec une douche. L'unité dispose de 2 lits."
+        }
+      }
+    },
+    "roomsHome": {
+        "heading": "Chambres & Suites",
+        "sub": "Détails artisanaux, patios paisibles et draps impeccables. Choisissez votre refuge idéal.",
+        "viewMore": "Voir plus"
+    },
+    "reviews": {
+        "heading": "Avis des clients",
+        "sub": "Impressions authentiques de nos récents visiteurs.",
+        "items": [
+            { "name": "yahya lassfar", "text": "C’est un endroit très merveilleux.❤️ J’ai beaucoup aimé le lieu et la nourriture était incroyable🥰." },
+            { "name": "Sylvia", "text": "Endroit idéal pour séjourner, se rafraîchir dans la piscine, faire sa lessive et se détendre !! Convient aussi aux grands camions aménagés." },
+            { "name": "Freddy Bryson-Bassett", "text": "Super site avec de bonnes installations, j’y reviendrai." }
+        ]
+    },
+    "booking": {
+      "labels": { "checkin": "Arrivée", "checkout": "Départ", "guests": "Voyageurs", "promo": "Code promo", "search": "Rechercher" },
+      "nights_one": "Parfait ! {{count}} nuit sélectionnée.",
+      "nights_other": "Parfait ! {{count}} nuits sélectionnées.",
+      "invalid": "Veuillez choisir une date de départ après la date d’arrivée.",
+      "guestsOptions": ["1 adulte", "2 adultes", "3 adultes", "4 adultes", "Famille (2+2)"]
+    },
+    "gallery": {
+      "heading": "Galerie",
+      "sub": "Un aperçu de couleurs et de calme."
+    },
+    "location": {
+      "heading": "Au cœur de Marrakech",
+      "desc": "Nichée près de la médina, Riad El Baraka se trouve à quelques pas de Jemaa el-Fna et des souks animés.",
+      "bullets": {
+        "address": "Sidi Benslimane (exemple) – Marrakech",
+        "walk": "10–15 minutes jusqu’à Jemaa el-Fna",
+        "airport": "20 minutes de l’aéroport RAK"
+      }
+    },
+    "contact": {
+      "heading": "Contactez-nous",
+      "sub": "Questions, réservations de groupe ou demandes spéciales — nous sommes là pour vous aider.",
+      "form": { "name": "Nom", "email": "E-mail", "message": "Message", "send": "Envoyer", "thanks": "Merci ! Nous vous répondrons rapidement." },
+      "direct": { "heading": "Contacts directs", "phone": "📞 +212 6 12 34 56 78", "email": "✉️ hello@riadelbaraka.com", "address": "📍 Médina, Marrakech, Maroc" },
+      "follow": "Suivre"
+    },
+    "footer": {
+      "rights": "Tous droits réservés.",
+      "top": "Haut de page",
+      "rooms": "Chambres",
+      "contact": "Contact"
+    },
+    "galleryPage": {
+      "heading": "Galerie",
+      "sub": "Parcourez des photos du riad et des environs.",
+      "close": "Fermer",
+      "next": "Suivante",
+      "prev": "Précédente",
+      "counter": "{{current}} / {{total}}",
+      "alt": "Image de la galerie {{n}}"
+    }
+
+
+
+  }
+  
