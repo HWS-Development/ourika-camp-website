@@ -9,9 +9,9 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-brand-black/70">© {year} Riad El Baraka. {t('footer.rights')}</p>
           <nav className="text-sm flex items-center gap-4">
-            <a href="#home" className="hover:text-brand-orange">{t('footer.top')}</a>
+            <a href="/#home" className="hover:text-brand-orange">{t('footer.top')}</a>
             <a href="/rooms" className="hover:text-brand-orange">{t('footer.rooms')}</a>
-            <a href="#contact" className="hover:text-brand-orange">{t('footer.contact')}</a>
+            <a href="/#contact" className="hover:text-brand-orange">{t('footer.contact')}</a>
           </nav>
         </div>
       </div>

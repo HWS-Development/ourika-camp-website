@@ -37,7 +37,7 @@ export default function GalleryPage() {
   }, [open]);
 
   return (
-    <section className="py-16 min-h-screen bg-brand-desert/40 bg-pattern">
+    <section className="pb-16 pt-48 min-h-screen bg-brand-desert/40 bg-pattern">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <h1 className="text-3xl sm:text-4xl font-bold">{t('galleryPage.heading')}</h1>

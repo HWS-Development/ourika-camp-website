@@ -62,16 +62,16 @@
       "heading": "In the Heart of Marrakech",
       "desc": "Nestled near the medina, Riad El Baraka is a short stroll from Jemaa el-Fnaa and the vibrant souks.",
       "bullets": {
-        "address": "Sidi Benslimane (example) – Marrakech",
-        "walk": "10–15 minutes to Jemaa el-Fnaa",
-        "airport": "20 minutes from RAK Airport"
+        "address": "Km 10, Route de Ourika, Marrakesh 44000",
+        "walk": "15-20 minutes to Jemaa el-Fnaa",
+        "airport": "20-25 minutes from RAK Airport"
       }
     },
     "contact": {
       "heading": "Get in Touch",
       "sub": "Questions, group bookings, or special requests—we're happy to help.",
       "form": { "name": "Name", "email": "Email", "message": "Message", "send": "Send", "thanks": "Thanks! We'll get back to you shortly." },
-      "direct": { "heading": "Direct Contacts", "phone": "📞 +212 6 12 34 56 78", "email": "✉️ hello@riadelbaraka.com", "address": "📍 Medina, Marrakech, Morocco" },
+      "direct": { "heading": "Direct Contacts", "phone": "📞 +212 648-489748", "email": "✉️ hello@ourikacamp.com", "address": "📍 Marrakech, Morocco" },
       "follow": "Follow"
     },
     "footer": {

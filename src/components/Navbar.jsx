@@ -1,23 +1,30 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { useTranslation } from 'react-i18next';
-
-
+import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const { t, i18n } = useTranslation()
+  const { pathname } = useLocation()
+  const [solid, setSolid] = useState(pathname !== '/')
 
-  // close on resize to lg+
   useEffect(() => {
     const onResize = () => { if (window.innerWidth >= 1024) setOpen(false) }
     window.addEventListener('resize', onResize)
     return () => window.removeEventListener('resize', onResize)
   }, [])
-  const { t, i18n } = useTranslation();
-  const switchTo = (lng) => i18n.changeLanguage(lng);
+
+  useEffect(() => {
+    const onScroll = () => setSolid(window.scrollY > 40 || pathname !== '/')
+    onScroll()
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [pathname])
+
+  const switchTo = (lng) => i18n.changeLanguage(lng)
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50">
+    <header id="siteHeader" className="fixed top-0 inset-x-0 z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mt-4 rounded-2xl shadow-soft glass text-white">
           <nav className="flex items-center justify-between p-4">

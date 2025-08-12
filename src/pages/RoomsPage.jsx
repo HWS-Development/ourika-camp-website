@@ -12,7 +12,7 @@ export default function RoomsPage() {
       
   
     return (
-      <section className="py-16 bg-brand-desert/40 bg-pattern min-h-screen">
+      <section className="pb-16 pt-48 bg-brand-desert/40 bg-pattern min-h-screen">
         <div className="max-w-6xl mx-auto px-4">
           <h1 className="text-4xl font-bold mb-6">Our Rooms</h1>
           <p className="text-brand-black/70 max-w-2xl mb-12">

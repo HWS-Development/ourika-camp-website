@@ -17,7 +17,7 @@ export default function Location() {
           </div>
           <div className="rounded-2xl overflow-hidden shadow-soft border border-black/10">
             <iframe title="Map" width="100%" height="360" style={{border:0}} loading="lazy" allowFullScreen
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.795898795828!2d-7.991!3d31.631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee12f07a123%3A0x0!2sMarrakech!5e0!3m2!1sen!2sma!4v1680199999999"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.90464155096!2d-7.964612517932828!3d31.52677890771596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafe52d2eaa32f1%3A0xb5f3e00442a20951!2sOurika%20Camp!5e0!3m2!1sen!2sma!4v1754991643595!5m2!1sen!2sma"></iframe>
           </div>
         </div>
       </div>
