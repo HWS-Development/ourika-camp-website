@@ -44,7 +44,7 @@ export default function Navbar() {
               <li><Link className="hover:text-brand-orange" to="/rooms">{t('nav.rooms')}</Link></li>
               <li><Link className="hover:text-brand-orange" to="/gallery">{t('nav.gallery')}</Link></li>
               {/* <li><a className="hover:text-brand-orange" href="/#location">{t('nav.location')}</a></li> */}
-              <li><a className="hover:text-brand-orange" href="/#contact">{t('nav.contact')}</a></li>
+              <li><a className="hover:text-brand-orange" href="/contact">{t('nav.contact')}</a></li>
               <li><a className="ml-2 inline-flex items-center rounded-xl bg-brand-orange px-4 py-2 font-semibold text-black" href="/#booking">{t('nav.book')}</a></li>
               
           <div className="ml-3 flex items-center gap-2 text-sm">
@@ -57,11 +57,10 @@ export default function Navbar() {
           {open && (
             <div className="lg:hidden border-t border-white/10">
               <ul className="p-4 grid gap-2 text-white/90">
-                <li><a className="block rounded-lg px-3 py-2 hover:bg-white/10" href="#rooms" onClick={() => setOpen(false)}>Rooms</a></li>
-                <li><a className="block rounded-lg px-3 py-2 hover:bg-white/10" href="#amenities" onClick={() => setOpen(false)}>Amenities</a></li>
-                <li><a className="block rounded-lg px-3 py-2 hover:bg-white/10" href="#gallery" onClick={() => setOpen(false)}>Gallery</a></li>
-                <li><a className="block rounded-lg px-3 py-2 hover:bg-white/10" href="#location" onClick={() => setOpen(false)}>Location</a></li>
-                <li><a className="block rounded-lg px-3 py-2 hover:bg-white/10" href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
+                <li><Link className="block rounded-lg px-3 py-2 hover:bg-white/10" to="/" onClick={() => setOpen(false)}>{t('nav.home')}</Link></li>
+                <li><Link className="block rounded-lg px-3 py-2 hover:bg-white/10" to="/rooms" onClick={() => setOpen(false)}>{t('nav.rooms')}</Link></li>
+                <li><Link className="block rounded-lg px-3 py-2 hover:bg-white/10" to="/gallery" onClick={() => setOpen(false)}>{t('nav.gallery')}</Link></li>
+                <li><Link className="block rounded-lg px-3 py-2 hover:bg-white/10" to="/contact" onClick={() => setOpen(false)}>{t('nav.contact')}</Link></li>
                 <li><a className="mt-2 block rounded-lg bg-brand-orange px-3 py-2 text-black font-semibold" href="/#booking" onClick={() => setOpen(false)}>Book Now</a></li>
               </ul>
             </div>
